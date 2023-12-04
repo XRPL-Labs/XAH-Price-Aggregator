@@ -48,8 +48,8 @@ export default (async () => {
   }
 
   log(raw)
-
-  const filteredResults = rawResults.filter(r => Math.abs(r - rawMedian) < rawStdev)
+  
+  const filteredResults = rawResults.filter(r => Math.abs(r - rawMedian) < rawStdev || rawStdev === 0)
   const filteredMedian = stats.median(filteredResults)
   const filteredMean = stats.mean(filteredResults)
   
