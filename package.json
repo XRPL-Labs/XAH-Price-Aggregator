@@ -1,6 +1,6 @@
 {
   "name": "xah-price-aggregator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Fetches XRP (USD) prices from multiple data sources, filters out based on stdev",
   "main": "src/index.js",
